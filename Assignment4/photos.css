@@ -1,0 +1,202 @@
+/* JavaScript - Assignment 4
+
+   Photo gallery
+   Author: Julio Vinicius A. de Carvalho
+   Date: April 1st, 2023
+   
+   Large format style sheet
+
+   Filename: photos.css
+
+   Student Name: Maha Nasir
+   Student Number: 301266305
+
+   link: http://studentweb.cencol.ca/mnasir11/comp125/Assignment4
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   margin: 0 auto;
+   font-family:"Quicksand", serif;  
+   background-color: rgb(103, 112, 138);
+   position: relative;
+}
+.container{
+   width: 750px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* page header */
+header {
+   color: white;
+   font-size: 3.7em;
+}
+
+header h1 {
+   text-align: center;
+   padding: 0.5em;
+   text-shadow: 1px 2px 25px rgb(255, 255, 255);
+   font-size: 45px;
+   margin-bottom: 25px;
+   margin-top: 5px;
+}
+
+/* main content */
+article {
+   background: white;
+   position: relative;
+}
+
+#leftarrow, #rightarrow {
+   background: rgba(199, 126, 126, 0.801);
+   border: 3px solid  rgba(237, 204, 204, 0.801);
+   border-radius: 55px;
+   position: absolute;
+   z-index: 30;
+   text-align: center;
+   height: 55px;
+   width: 55px;
+   top: 100px;
+   cursor: pointer;
+}
+#leftarrow:hover, #rightarrow:hover {
+   background: rgba(146, 76, 76, 0.801);
+   border: 3px solid  rgba(203, 144, 144, 0.801);
+}
+
+article div:hover {
+   cursor: default;
+}
+
+#leftarrow {
+   left: 0;
+}
+
+#rightarrow {
+   right: 0;
+}
+
+article p{
+   color: white;
+   position:relative;
+   text-align: center;
+}
+
+#leftarrow p, #rightarrow p {
+   position: relative;
+   top: 50%;
+   margin-top: -0.5em;
+}
+
+figure {
+   position: absolute;
+   -webkit-box-shadow: 10px 0px 5px rgba(237, 204, 204, 0.801),
+                       -10px 0px 5px rgba(237, 204, 204, 0.801);
+   -moz-box-shadow:    10px 0px 5px rgba(237, 204, 204, 0.801),
+                       -10px 0px 5px rgba(237, 204, 204, 0.801);
+   box-shadow:         10px 0px 5px rgba(237, 204, 204, 0.801),
+                       -10px 0px 5px rgba(237, 204, 204, 0.801);
+}
+
+#fig3 {
+   z-index: 20;
+   left: 50%;
+   margin-left: -240px;
+   top: 0;
+}
+
+#reloadButton {
+   display: block;
+   width: 100%;
+   position: absolute;
+   top: 320px;
+   color: white;
+   text-align: center;
+   cursor: pointer;
+}
+
+#reloadButton p {
+   width: 20%;
+   margin: 0 auto;
+   line-height: 2em;
+   border: 3px solid  rgba(237, 204, 204, 0.801);
+   background: rgb(138, 102, 109);
+}
+#reloadButton p:hover {
+   background: rgba(146, 76, 76, 0.801);
+   border: 3px solid  rgba(203, 144, 144, 0.801);
+}
+
+#imgName{
+   background: rgba(237, 204, 204, 0.801);
+   color:rgb(135, 86, 96);
+
+font-weight: bold;
+}
+
+/*Footer*/
+footer {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   font-size: 12px;
+}
+h6 {
+   text-align: center;
+   position:relative; 
+   line-height: 20px ;
+   margin-bottom: 2px;
+}
+.Copyright{ 
+ color: rgb(244, 253, 234);
+ position: relative;
+ bottom: 0;
+ height: 55px;   
+ background: rgb(138, 102, 109);
+ width: 100%;
+}
+.Copyright a{ 
+   color: rgb(255, 255, 255);
+}
+.Copyright a:hover{ 
+  color: rgb(194, 243, 252);
+}
+  
+
